@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | JS Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ </head>
+ <body>
+    <div class="container">
+
+      <!-- title -->
+
+      <h1>Password Generator</h1>
+
+      <!-- display -->
+
+      <div class="inputBox">
+        <input type="text" class="passBox" 
+        id="passBox" disabled>
+        <span class="material-symbols-outlined" id="copyIcon">
+          content_copy
+          </span>
+      </div>
+
+      <!-- Slider -->
+
+      <input type="range" min="1" max="30" value="10"
+      id="inputSlider">
+
+      <!-- Length Of Slider -->
+
+      <div class="row">
+        <p>Password Length</p>
+        <span id="sliderValue"></span>
+      </div>
+
+      <!-- All CheckBoxes -->
+
+      <div class="row">
+        <label for="lowercase">Include lowercase
+          Letters(a-z)
+        </label>
+        <input type="checkbox" name="lowercase" 
+        id="lowercase" checked>
+      </div>
+      <div class="row">
+        <label for="uppercase">Include uppercase
+          Letters(A-Z)
+        </label>
+        <input type="checkbox" name="uppercase" 
+        id="uppercase" checked>
+      </div>
+      <div class="row">
+        <label for="numbers">Include numbers
+          (0-9)
+        </label>
+        <input type="checkbox" name="numbers" 
+        id="numbers" checked>
+      </div>
+      <div class="row">
+        <label for="symbols">Include symbols
+          (@ - *)
+        </label>
+        <input type="checkbox" name="symbols" 
+        id="symbols" checked>
+      </div>
+
+      <!-- Generate Button -->
+
+      <button type="button" class="genBtn" 
+      id="genBtn">
+        Generate Password
+      </button>
+      
+
+    </div>
+    <script src="script.js"></script>
+ </body>
+ </html>
